@@ -1,5 +1,5 @@
 class Vehicle:  # defining the parent class
-    fuelCap = 90
+    fuelCap = 90 # class variable
 
 
 class Car(Vehicle):  # defining the child class
@@ -29,8 +29,8 @@ class ParentClass():
 class ChildClass(ParentClass):
     def __init__(self, a, b, c): 
         # same as
-        ParentClass.__init__(self, a, b)
-        super().__init__(a, b) 
+        # ParentClass.__init__(self, a, b)
+        super().__init__(a, b) # notice the brackets() aka ParentClass == super()....
         self.c = c
 
 
