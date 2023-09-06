@@ -38,3 +38,24 @@ obj = ChildClass(1, 2, 3)
 print(obj.a)
 print(obj.b)
 print(obj.c)
+
+
+# -------------------
+
+class A:
+    def display(self):
+        print("This is class A")
+        
+class B(A):
+    def display(self):
+        print("This is class B")
+        
+class C(A):
+    def display(self):
+        print("This is class C")
+        
+class D(B, C):
+    pass
+
+obj = D()
+obj.display()
