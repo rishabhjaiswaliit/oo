@@ -28,7 +28,7 @@ class Child extends Parent {
     System.out.println("4");
   }
   Child(int a, int b, int c) {
-    super();
+    super(); // either this() OR super() should be the FIRST LINE in JAVA
     System.out.println("3");
   }
 }
