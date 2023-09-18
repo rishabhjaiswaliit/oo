@@ -7,7 +7,7 @@ public class YourClassNameHere {
       for (int i = 0; i < arr.length; i++) {
         String word = arr[i];
         if (i == 0) {
-          sb.append(word);
+          sb.append(word.toLowerCase());
         } else {
           sb.append((word.charAt(0) + "").toUpperCase() + word.substring(1).toLowerCase());
         }
