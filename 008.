@@ -1,0 +1,25 @@
+import jdk.incubator.vector.VectorOperators;
+
+public class Vector implements Cloneable {
+    int x;
+    int y;
+    String arr[] = new String[10];
+    public Vector(int x, int y) {
+        System.out.println("constructor HERE");
+        this.x = x;
+        this.y = y;
+    }
+    public Vector() {
+    }
+    public Vector clone() throws CloneNotSupportedException {
+       Vector newVector = new Vector();
+       newVector.x = this.x;
+       newVector.y = this.y;
+       newVector.arr = new String[this.arr.length];
+       for (int i = 0; i < this.length; i++) {
+           newVector.arr[i] = this.arr[i];
+       }
+       return newVector;
+    }
+
+}
